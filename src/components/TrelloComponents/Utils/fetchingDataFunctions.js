@@ -12,7 +12,6 @@ export async function getBoardList() {
 }
 export async function getListItemOfBoard(id) {
   try {
-    console.log(TrialUrl + `${id}/lists?key=${key}&token=${token}`);
     const response = await axios.get(
       TrialUrl + `${id}/lists?key=${key}&token=${token}`
     );

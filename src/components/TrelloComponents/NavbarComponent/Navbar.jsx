@@ -4,7 +4,7 @@ import trelloLogo from "./trello.png";
 
 const Navbar = () => {
   return (
-    <Box bg="#1976D2" w="100%" p="2" color="white">
+    <Box bg="#1976D2" w="100vw" p="2" color="white">
       <Flex>
         <Center>
           <Image src={trelloLogo} h="40px" p="2" />

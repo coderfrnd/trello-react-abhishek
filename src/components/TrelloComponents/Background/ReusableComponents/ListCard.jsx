@@ -45,7 +45,7 @@ const ListCard = ({ listName, cardName, cardDesc, id, handleDeleteList }) => {
         height="100%"
         boxShadow="md"
       >
-        <Flex justify="space-between">
+        <Flex>
           <Text fontSize="lg" fontWeight="bold" mb="4">
             {listName}
           </Text>
@@ -53,10 +53,11 @@ const ListCard = ({ listName, cardName, cardDesc, id, handleDeleteList }) => {
             fontSize="lg"
             fontWeight="bold"
             mb="4"
+            ml="205px"
             cursor="pointer"
             onClick={() => handleDeleteList(id)}
           >
-            ...
+            Delete List
           </Text>
         </Flex>
         <VStack spacing="2" align="stretch">
@@ -70,7 +71,7 @@ const ListCard = ({ listName, cardName, cardDesc, id, handleDeleteList }) => {
           maxHeight="750px"
           overflowY="auto"
           p="2"
-          w="300px"
+          w="360px"
         >
           {getCards.map((ele) => {
             return <Cards cardName={ele.name} key={ele.id} />;
